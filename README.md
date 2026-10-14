@@ -1,11 +1,9 @@
 # Cyrbyte Security
 
-Static cybersecurity website for security.cyrbyte.com, deployed through the existing Vercel project cyrbytesecurity and GitHub repository kumarani0003/cyrbytesecurity.
+A normal, scrolling cybersecurity website with two decorative video sections and five dedicated service articles. All sections and article content are present in the initial HTML. No timers, video progress or JavaScript are required to access the content or follow article links.
 
-The landing sequence uses local MP4 assets without player controls. It ends on contact. Selecting content through navigation keeps that screen in place while background videos remain animated. Service details, the engagement process, FAQs and the email brief are interactive.
+Videos loop independently inside the hero and defense sections. The tunnel video loads when it enters the viewport. Playback pauses off-screen and respects reduced-motion preferences. Posters remain visible when media cannot play.
 
-The brief prepares an email to info@cyrbyte.com for the visitor to review and send; it does not send automatically. No dependency installation or build step is required. Serve index.html, styles.css, script.js and assets/ from the project root. Reduced-motion preferences use a static presentation; media failures have fallbacks.
+Service cards open static pages in `services/`. These contain assessment scope, deliverables, preparation, next steps and links to related services. Navigation uses ordinary links and anchor targets. The enquiry brief prepares an email draft for the visitor to review and send through their email app; it does not send automatically.
 
-Verified in the deployed desktop browser: stable navigation, service details and selection, video playback, enquiry draft creation and invalidation, FAQs, menu and corrected hero/contact layouts. Scripted interaction checks and asset checks also pass. Mobile visual testing is not completed.
-
-The custom domain still requires the security CNAME at its DNS provider; deployment itself is ready on Vercel.
+No installation or build step is required. Serve `index.html`, `styles.css`, `script.js`, `services/` and `assets/` from the project root. The existing GitHub repository and Vercel project host this site. `vercel.json` enables clean URLs.
