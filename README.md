@@ -2,8 +2,10 @@
 
 Static cybersecurity website for security.cyrbyte.com, deployed through the existing Vercel project cyrbytesecurity and GitHub repository kumarani0003/cyrbytesecurity.
 
-The homepage uses a continuous cinematic loop with local MP4 assets and no player controls. Interactive service details cover scope, audience, deliverables and engagement inputs. Process and FAQ dialogs provide further information. The security brief prepares an email to info@cyrbyte.com for the visitor to review and send; it does not send automatically.
+The landing sequence uses local MP4 assets without player controls. It ends on contact. Selecting content through navigation keeps that screen in place while background videos remain animated. Service details, the engagement process, FAQs and the email brief are interactive.
 
-No dependency installation or build step is required. Serve index.html, styles.css, script.js and assets/ from the project root. Reduced-motion preferences use static presentation. Media failures have poster or canvas fallbacks.
+The brief prepares an email to info@cyrbyte.com for the visitor to review and send; it does not send automatically. No dependency installation or build step is required. Serve index.html, styles.css, script.js and assets/ from the project root. Reduced-motion preferences use a static presentation; media failures have fallbacks.
 
-Validation: JavaScript syntax, scripted DOM interactions, asset/link checks and video decoding. Browser visual QA has not been completed in the authoring environment.
+Verified in the deployed desktop browser: stable navigation, service details and selection, video playback, enquiry draft creation and invalidation, FAQs, menu and corrected hero/contact layouts. Scripted interaction checks and asset checks also pass. Mobile visual testing is not completed.
+
+The custom domain still requires the security CNAME at its DNS provider; deployment itself is ready on Vercel.
