@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05070b" />
+  <meta name="description" content="Cyrbyte Security — Cyber defense, threat intelligence, incident response and digital forensics." />
+  <title>Cyrbyte Security — Cyber Defense & Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Cyrbyte Security home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M24 4 40 10v11c0 10.2-6.6 18.7-16 23-9.4-4.3-16-12.8-16-23V10L24 4Z" fill="none" stroke="currentColor" stroke-width="2.6"/>
+          <path d="m16.5 24 5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-copy"><b>CYRBYTE</b><small>SECURITY</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#platform">Platform</a>
+      <a href="#response">Incident Response</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a class="header-cta" href="mailto:info@cyrbyte.com?subject=Cyrbyte%20Security%20Consultation">Talk to Security</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse-dot"></span> CYRBYTE SECURITY / ACTIVE DEFENSE</div>
+        <h1>See the threat.<br><span>Stop the breach.</span></h1>
+        <p class="hero-lede">Cyrbyte Security helps organizations detect, investigate and contain cyber threats before they become business crises.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:info@cyrbyte.com?subject=Security%20Assessment%20Request">Request a security assessment</a>
+          <a class="btn btn-ghost" href="#capabilities">Explore capabilities <span>↘</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>24×7</strong><span>Threat readiness</span></div>
+          <div><strong>VAPT</strong><span>Web, API & infrastructure</span></div>
+          <div><strong>IR</strong><span>Incident response</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1" aria-hidden="true">
+        <div class="orbital-stage">
+          <div class="grid-plane"></div>
+          <div class="orbit orbit-a"><i></i></div>
+          <div class="orbit orbit-b"><i></i></div>
+          <div class="orbit orbit-c"><i></i></div>
+          <div class="core-shield">
+            <svg viewBox="0 0 120 140">
+              <path d="M60 7 106 24v31c0 33-18.7 60.2-46 77.9C32.7 115.2 14 88 14 55V24L60 7Z" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M39 67 54 82 83 49" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>PROTECTED</span>
+          </div>
+          <div class="telemetry telemetry-a"><span>EDGE-07</span><b>BLOCKED</b></div>
+          <div class="telemetry telemetry-b"><span>AUTH</span><b>VERIFIED</b></div>
+          <div class="telemetry telemetry-c"><span>RISK</span><b>LOW</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="threat-strip" aria-label="Security telemetry">
+      <div class="ticker-track">
+        <span>THREAT INTELLIGENCE</span><i>•</i><span>VULNERABILITY ASSESSMENT</span><i>•</i><span>INCIDENT RESPONSE</span><i>•</i><span>DIGITAL FORENSICS</span><i>•</i><span>CLOUD SECURITY</span><i>•</i><span>RED TEAMING</span><i>•</i>
+        <span>THREAT INTELLIGENCE</span><i>•</i><span>VULNERABILITY ASSESSMENT</span><i>•</i><span>INCIDENT RESPONSE</span><i>•</i><span>DIGITAL FORENSICS</span><i>•</i><span>CLOUD SECURITY</span><i>•</i><span>RED TEAMING</span><i>•</i>
+      </div>
+    </section>
+
+    <section class="section-shell section-pad" id="capabilities">
+      <div class="section-heading reveal">
+        <div class="eyebrow">CAPABILITIES</div>
+        <h2>Security that thinks<br>like an attacker.</h2>
+        <p>From proactive testing to post-incident investigation, our work is designed around one outcome: reducing real-world risk.</p>
+      </div>
+
+      <div class="cap-grid">
+        <article class="cap-card reveal">
+          <div class="cap-index">01</div>
+          <div class="cap-icon">⌁</div>
+          <h3>Offensive Security</h3>
+          <p>Authorized penetration testing across web apps, APIs and infrastructure to uncover exploitable weaknesses before attackers do.</p>
+          <span class="tag">VAPT / RED TEAM</span>
+        </article>
+        <article class="cap-card reveal delay-1">
+          <div class="cap-index">02</div>
+          <div class="cap-icon">◉</div>
+          <h3>Threat Intelligence</h3>
+          <p>Track exposed assets, leaked credentials, phishing activity and emerging attacker behavior that may target your organization.</p>
+          <span class="tag">INTELLIGENCE</span>
+        </article>
+        <article class="cap-card reveal delay-2">
+          <div class="cap-index">03</div>
+          <div class="cap-icon">⟁</div>
+          <h3>Incident Response</h3>
+          <p>Rapid containment, evidence preservation, root-cause analysis and recovery support when a security event becomes an incident.</p>
+          <span class="tag">IR / DFIR</span>
+        </article>
+        <article class="cap-card reveal">
+          <div class="cap-index">04</div>
+          <div class="cap-icon">⌘</div>
+          <h3>Cloud & Identity</h3>
+          <p>Review cloud posture, access controls and identity systems to eliminate high-impact configuration and privilege risks.</p>
+          <span class="tag">CLOUD / IAM</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="platform section-shell section-pad" id="platform">
+      <div class="platform-panel reveal">
+        <div class="platform-copy">
+          <div class="eyebrow">CYRBYTE SECURITY OPERATIONS</div>
+          <h2>One view of your<br>security posture.</h2>
+          <p>A unified operational layer for investigations, findings, asset risk and incident timelines—built to make security decisions faster.</p>
+          <ul class="feature-list">
+            <li><span>01</span>Asset exposure & risk overview</li>
+            <li><span>02</span>Security findings with remediation priority</li>
+            <li><span>03</span>Incident timeline & investigation workspace</li>
+            <li><span>04</span>Executive-ready security reporting</li>
+          </ul>
+        </div>
+        <div class="dashboard-mock">
+          <div class="dash-top"><span>CYRBYTE / SECURITY OPS</span><span class="live">● LIVE</span></div>
+          <div class="dash-grid">
+            <div class="metric"><small>RISK SCORE</small><strong>18</strong><span>LOW</span></div>
+            <div class="metric"><small>OPEN FINDINGS</small><strong>07</strong><span>2 CRITICAL</span></div>
+            <div class="metric"><small>ASSETS</small><strong>126</strong><span>MONITORED</span></div>
+            <div class="metric"><small>LAST SCAN</small><strong>4m</strong><span>AGO</span></div>
+          </div>
+          <div class="signal-map">
+            <div class="scan-ring r1"></div><div class="scan-ring r2"></div><div class="scan-ring r3"></div>
+            <div class="scan-line"></div>
+            <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span>
+            <div class="map-center">CYR</div>
+          </div>
+          <div class="event-feed">
+            <div><span>14:02:17</span><b>Suspicious login blocked</b><em>IDENTITY</em></div>
+            <div><span>13:48:09</span><b>Critical API exposure verified</b><em>VAPT</em></div>
+            <div><span>13:21:42</span><b>Endpoint telemetry normal</b><em>EDR</em></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="response section-shell section-pad" id="response">
+      <div class="response-grid">
+        <div class="section-heading reveal">
+          <div class="eyebrow">INCIDENT RESPONSE</div>
+          <h2>When something<br>goes wrong, move fast.</h2>
+          <p>For suspected breaches, ransomware, compromised accounts or malicious access, Cyrbyte Security can help structure the response and investigation.</p>
+          <a class="btn btn-primary" href="mailto:info@cyrbyte.com?subject=Urgent%20Incident%20Response%20Request">Report an incident</a>
+        </div>
+        <div class="response-flow reveal delay-1">
+          <div class="flow-step"><span>01</span><div><b>Contain</b><p>Reduce attacker access and preserve evidence.</p></div></div>
+          <div class="flow-step"><span>02</span><div><b>Investigate</b><p>Reconstruct what happened, when and how.</p></div></div>
+          <div class="flow-step"><span>03</span><div><b>Eradicate</b><p>Remove persistence and close exploited gaps.</p></div></div>
+          <div class="flow-step"><span>04</span><div><b>Recover</b><p>Return systems safely and improve resilience.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles section-shell section-pad" id="about">
+      <div class="principle-card reveal">
+        <div class="eyebrow">HOW WE OPERATE</div>
+        <h2>Authorized. Evidence-led.<br>Business focused.</h2>
+        <p>Every engagement is scoped, documented and performed only with explicit authorization. Security findings are translated into clear business risk and practical remediation—not noise.</p>
+        <div class="principle-row">
+          <div><strong>01</strong><span>Clear scope</span></div>
+          <div><strong>02</strong><span>Controlled testing</span></div>
+          <div><strong>03</strong><span>Actionable reporting</span></div>
+          <div><strong>04</strong><span>Confidential handling</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section-shell">
+      <div class="cta-panel reveal">
+        <div>
+          <div class="eyebrow">START WITH VISIBILITY</div>
+          <h2>Know where your<br>risk actually is.</h2>
+        </div>
+        <div class="cta-side">
+          <p>Request an initial conversation for VAPT, cyber risk assessment, incident response or security architecture review.</p>
+          <a class="btn btn-light" href="mailto:info@cyrbyte.com?subject=Cyrbyte%20Security%20Consultation">Contact Cyrbyte Security</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div class="footer-brand">
+      <div class="brand brand-static">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 4 40 10v11c0 10.2-6.6 18.7-16 23-9.4-4.3-16-12.8-16-23V10L24 4Z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="m16.5 24 5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-copy"><b>CYRBYTE</b><small>SECURITY</small></span>
+      </div>
+      <p>Cyber Defense & Intelligence</p>
+    </div>
+    <div class="footer-links">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#response">Incident Response</a>
+      <a href="mailto:info@cyrbyte.com">info@cyrbyte.com</a>
+    </div>
+    <div class="footer-note">© <span id="year"></span> Cyrbyte. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
