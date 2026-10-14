@@ -1,226 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#05070b" />
-  <meta name="description" content="Cyrbyte Security — Cyber defense, threat intelligence, incident response and digital forensics." />
-  <title>Cyrbyte Security — Cyber Defense & Intelligence</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f9fa"><title>Cyrbyte Security | Human instinct. Digital defense.</title><meta name="description" content="Cyrbyte Security. Explore offensive security, threat intelligence, incident response and cloud security. Start a security conversation with Cyrbyte."><link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css?v=5"></head>
 <body>
-  <div class="noise"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Cyrbyte Security home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 48 48" role="img">
-          <path d="M24 4 40 10v11c0 10.2-6.6 18.7-16 23-9.4-4.3-16-12.8-16-23V10L24 4Z" fill="none" stroke="currentColor" stroke-width="2.6"/>
-          <path d="m16.5 24 5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </span>
-      <span class="brand-copy"><b>CYRBYTE</b><small>SECURITY</small></span>
-    </a>
-
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#capabilities">Capabilities</a>
-      <a href="#platform">Platform</a>
-      <a href="#response">Incident Response</a>
-      <a href="#about">About</a>
-    </nav>
-
-    <a class="header-cta" href="mailto:info@cyrbyte.com?subject=Cyrbyte%20Security%20Consultation">Talk to Security</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">
-      <span></span><span></span>
-    </button>
-  </header>
-
-  <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse-dot"></span> CYRBYTE SECURITY / ACTIVE DEFENSE</div>
-        <h1>See the threat.<br><span>Stop the breach.</span></h1>
-        <p class="hero-lede">Cyrbyte Security helps organizations detect, investigate and contain cyber threats before they become business crises.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="mailto:info@cyrbyte.com?subject=Security%20Assessment%20Request">Request a security assessment</a>
-          <a class="btn btn-ghost" href="#capabilities">Explore capabilities <span>↘</span></a>
-        </div>
-        <div class="hero-meta">
-          <div><strong>24×7</strong><span>Threat readiness</span></div>
-          <div><strong>VAPT</strong><span>Web, API & infrastructure</span></div>
-          <div><strong>IR</strong><span>Incident response</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual reveal delay-1" aria-hidden="true">
-        <div class="orbital-stage">
-          <div class="grid-plane"></div>
-          <div class="orbit orbit-a"><i></i></div>
-          <div class="orbit orbit-b"><i></i></div>
-          <div class="orbit orbit-c"><i></i></div>
-          <div class="core-shield">
-            <svg viewBox="0 0 120 140">
-              <path d="M60 7 106 24v31c0 33-18.7 60.2-46 77.9C32.7 115.2 14 88 14 55V24L60 7Z" fill="none" stroke="currentColor" stroke-width="2.2"/>
-              <path d="M39 67 54 82 83 49" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>PROTECTED</span>
-          </div>
-          <div class="telemetry telemetry-a"><span>EDGE-07</span><b>BLOCKED</b></div>
-          <div class="telemetry telemetry-b"><span>AUTH</span><b>VERIFIED</b></div>
-          <div class="telemetry telemetry-c"><span>RISK</span><b>LOW</b></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="threat-strip" aria-label="Security telemetry">
-      <div class="ticker-track">
-        <span>THREAT INTELLIGENCE</span><i>•</i><span>VULNERABILITY ASSESSMENT</span><i>•</i><span>INCIDENT RESPONSE</span><i>•</i><span>DIGITAL FORENSICS</span><i>•</i><span>CLOUD SECURITY</span><i>•</i><span>RED TEAMING</span><i>•</i>
-        <span>THREAT INTELLIGENCE</span><i>•</i><span>VULNERABILITY ASSESSMENT</span><i>•</i><span>INCIDENT RESPONSE</span><i>•</i><span>DIGITAL FORENSICS</span><i>•</i><span>CLOUD SECURITY</span><i>•</i><span>RED TEAMING</span><i>•</i>
-      </div>
-    </section>
-
-    <section class="section-shell section-pad" id="capabilities">
-      <div class="section-heading reveal">
-        <div class="eyebrow">CAPABILITIES</div>
-        <h2>Security that thinks<br>like an attacker.</h2>
-        <p>From proactive testing to post-incident investigation, our work is designed around one outcome: reducing real-world risk.</p>
-      </div>
-
-      <div class="cap-grid">
-        <article class="cap-card reveal">
-          <div class="cap-index">01</div>
-          <div class="cap-icon">⌁</div>
-          <h3>Offensive Security</h3>
-          <p>Authorized penetration testing across web apps, APIs and infrastructure to uncover exploitable weaknesses before attackers do.</p>
-          <span class="tag">VAPT / RED TEAM</span>
-        </article>
-        <article class="cap-card reveal delay-1">
-          <div class="cap-index">02</div>
-          <div class="cap-icon">◉</div>
-          <h3>Threat Intelligence</h3>
-          <p>Track exposed assets, leaked credentials, phishing activity and emerging attacker behavior that may target your organization.</p>
-          <span class="tag">INTELLIGENCE</span>
-        </article>
-        <article class="cap-card reveal delay-2">
-          <div class="cap-index">03</div>
-          <div class="cap-icon">⟁</div>
-          <h3>Incident Response</h3>
-          <p>Rapid containment, evidence preservation, root-cause analysis and recovery support when a security event becomes an incident.</p>
-          <span class="tag">IR / DFIR</span>
-        </article>
-        <article class="cap-card reveal">
-          <div class="cap-index">04</div>
-          <div class="cap-icon">⌘</div>
-          <h3>Cloud & Identity</h3>
-          <p>Review cloud posture, access controls and identity systems to eliminate high-impact configuration and privilege risks.</p>
-          <span class="tag">CLOUD / IAM</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="platform section-shell section-pad" id="platform">
-      <div class="platform-panel reveal">
-        <div class="platform-copy">
-          <div class="eyebrow">CYRBYTE SECURITY OPERATIONS</div>
-          <h2>One view of your<br>security posture.</h2>
-          <p>A unified operational layer for investigations, findings, asset risk and incident timelines—built to make security decisions faster.</p>
-          <ul class="feature-list">
-            <li><span>01</span>Asset exposure & risk overview</li>
-            <li><span>02</span>Security findings with remediation priority</li>
-            <li><span>03</span>Incident timeline & investigation workspace</li>
-            <li><span>04</span>Executive-ready security reporting</li>
-          </ul>
-        </div>
-        <div class="dashboard-mock">
-          <div class="dash-top"><span>CYRBYTE / SECURITY OPS</span><span class="live">● LIVE</span></div>
-          <div class="dash-grid">
-            <div class="metric"><small>RISK SCORE</small><strong>18</strong><span>LOW</span></div>
-            <div class="metric"><small>OPEN FINDINGS</small><strong>07</strong><span>2 CRITICAL</span></div>
-            <div class="metric"><small>ASSETS</small><strong>126</strong><span>MONITORED</span></div>
-            <div class="metric"><small>LAST SCAN</small><strong>4m</strong><span>AGO</span></div>
-          </div>
-          <div class="signal-map">
-            <div class="scan-ring r1"></div><div class="scan-ring r2"></div><div class="scan-ring r3"></div>
-            <div class="scan-line"></div>
-            <span class="node n1"></span><span class="node n2"></span><span class="node n3"></span><span class="node n4"></span>
-            <div class="map-center">CYR</div>
-          </div>
-          <div class="event-feed">
-            <div><span>14:02:17</span><b>Suspicious login blocked</b><em>IDENTITY</em></div>
-            <div><span>13:48:09</span><b>Critical API exposure verified</b><em>VAPT</em></div>
-            <div><span>13:21:42</span><b>Endpoint telemetry normal</b><em>EDR</em></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="response section-shell section-pad" id="response">
-      <div class="response-grid">
-        <div class="section-heading reveal">
-          <div class="eyebrow">INCIDENT RESPONSE</div>
-          <h2>When something<br>goes wrong, move fast.</h2>
-          <p>For suspected breaches, ransomware, compromised accounts or malicious access, Cyrbyte Security can help structure the response and investigation.</p>
-          <a class="btn btn-primary" href="mailto:info@cyrbyte.com?subject=Urgent%20Incident%20Response%20Request">Report an incident</a>
-        </div>
-        <div class="response-flow reveal delay-1">
-          <div class="flow-step"><span>01</span><div><b>Contain</b><p>Reduce attacker access and preserve evidence.</p></div></div>
-          <div class="flow-step"><span>02</span><div><b>Investigate</b><p>Reconstruct what happened, when and how.</p></div></div>
-          <div class="flow-step"><span>03</span><div><b>Eradicate</b><p>Remove persistence and close exploited gaps.</p></div></div>
-          <div class="flow-step"><span>04</span><div><b>Recover</b><p>Return systems safely and improve resilience.</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="principles section-shell section-pad" id="about">
-      <div class="principle-card reveal">
-        <div class="eyebrow">HOW WE OPERATE</div>
-        <h2>Authorized. Evidence-led.<br>Business focused.</h2>
-        <p>Every engagement is scoped, documented and performed only with explicit authorization. Security findings are translated into clear business risk and practical remediation—not noise.</p>
-        <div class="principle-row">
-          <div><strong>01</strong><span>Clear scope</span></div>
-          <div><strong>02</strong><span>Controlled testing</span></div>
-          <div><strong>03</strong><span>Actionable reporting</span></div>
-          <div><strong>04</strong><span>Confidential handling</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-section section-shell">
-      <div class="cta-panel reveal">
-        <div>
-          <div class="eyebrow">START WITH VISIBILITY</div>
-          <h2>Know where your<br>risk actually is.</h2>
-        </div>
-        <div class="cta-side">
-          <p>Request an initial conversation for VAPT, cyber risk assessment, incident response or security architecture review.</p>
-          <a class="btn btn-light" href="mailto:info@cyrbyte.com?subject=Cyrbyte%20Security%20Consultation">Contact Cyrbyte Security</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-shell">
-    <div class="footer-brand">
-      <div class="brand brand-static">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48"><path d="M24 4 40 10v11c0 10.2-6.6 18.7-16 23-9.4-4.3-16-12.8-16-23V10L24 4Z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="m16.5 24 5 5 10-11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        <span class="brand-copy"><b>CYRBYTE</b><small>SECURITY</small></span>
-      </div>
-      <p>Cyber Defense & Intelligence</p>
-    </div>
-    <div class="footer-links">
-      <a href="#capabilities">Capabilities</a>
-      <a href="#response">Incident Response</a>
-      <a href="mailto:info@cyrbyte.com">info@cyrbyte.com</a>
-    </div>
-    <div class="footer-note">© <span id="year"></span> Cyrbyte. All rights reserved.</div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<a class="skip" href="#capabilities">Skip to capabilities</a>
+<header class="header">
+<a class="brand" href="#home" aria-label="Cyrbyte Security home"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 40 10v11c0 10-7 19-16 23C15 40 8 31 8 21V10Z" fill="none" stroke="currentColor" stroke-width="3"/><path d="m17 24 5 5 10-12" fill="none" stroke="currentColor" stroke-width="3"/></svg><span>Cyrbyte<small>Security</small></span></a>
+<button class="pill menu-toggle" aria-expanded="false" aria-controls="navigation"><span class="round">+</span><span>Menu</span></button>
+<nav class="nav-chips" aria-label="Sections"><a href="#capabilities">Cyber defense</a><a href="#approach">Human intelligence</a></nav>
+<a class="pill contact-pill" href="#contact"><span class="round">↗</span><span>Let's talk security</span></a>
+</header>
+<nav class="menu-panel" id="navigation" aria-label="Main navigation" hidden><a href="#home"><span>01</span>Home ↗</a><a href="#defense"><span>02</span>Digital defense ↗</a><a href="#approach"><span>03</span>Our approach ↗</a><a href="#capabilities"><span>04</span>Capabilities ↗</a><a href="#contact"><span>05</span>Get in touch ↗</a><div>Human instinct. Digital defense.</div></nav>
+<main class="page">
+<section class="hero-track" id="home" aria-label="Cyrbyte Security introduction">
+<div class="hero stage">
+<div class="orb" aria-hidden="true"></div>
+<div class="hero-title"><span class="eyebrow">CYBER DEFENSE & INTELLIGENCE</span><h1>Cyrbyte Security<br><span class="muted">Human instinct.</span> Digital defense.</h1></div>
+<video class="hero-film" id="hero-video" autoplay muted playsinline loop preload="auto" poster="assets/hero-poster.webp" aria-hidden="true"><source src="assets/human-machine-v2.mp4" type="video/mp4"></video>
+<div class="hero-bottom"><div><span class="eyebrow">Built around trust</span><p>Bridging human intelligence<br>and technology for a safer,<br>more resilient digital world.</p></div><a class="scroll-cue" href="#defense" aria-label="Show digital defense scene"><span></span>Next scene ↗</a><div class="outline-chips"><a href="#capabilities" data-select="0">VAPT</a><a href="#capabilities" data-select="1">Intelligence</a><a href="#capabilities" data-select="2">Response</a></div></div>
+<div class="hero-side" aria-hidden="true">HUMAN × MACHINE</div>
+</div></section>
+<section class="tunnel-track" id="defense" aria-label="Digital defense">
+<div class="tunnel stage"><video class="tunnel-film" id="tunnel-video" autoplay muted playsinline loop preload="metadata" poster="assets/tunnel-poster.webp" aria-hidden="true"><source src="assets/digital-tunnel.mp4" type="video/mp4"></video><canvas id="tunnel" aria-hidden="true"></canvas><div class="tunnel-vignette"></div><div class="tunnel-title"><span class="eyebrow">CYRBYTE SECURITY</span><h2><span id="tunnel-word">NEXT GENERATION</span><br>DIGITAL DEFENSE</h2></div><div class="tunnel-bottom"><span class="coordinates">01 / CONNECTED WORLD</span><p>Every connection opens a possibility.<br>Understand the exposure. Find the weakness.<br>Build resilience into what comes next.</p></div><a href="#approach" class="tunnel-down" aria-label="Explore our approach">↓</a></div>
+</section>
+<section class="approach section" id="approach"><div class="section-top"><span class="eyebrow">PRECISION WITH PURPOSE</span><span class="eyebrow">02 / OUR APPROACH</span></div><h2 class="reveal">Technology moves fast.<br><span class="muted">Trust should move with it.</span></h2><div class="approach-intro reveal"><p>Security begins with understanding the people, systems and decisions behind your business.</p><p>Our focus is clear scope, evidence-led investigation and practical next steps. From exposure to recovery, turn complex security questions into a direction you can act on.</p></div><button class="text-link" id="process-open">Explore the engagement process ↗</button><div class="principles">
+<div class="principle reveal"><div class="principle-label"><b>01</b><span>Understand the exposure</span></div><div class="soft-bar"><div class="glass-sphere sphere-one"></div><span>See the whole picture.</span></div><p>Define assets, access and the boundaries of an authorized assessment.</p></div>
+<div class="principle reveal"><div class="principle-label"><b>02</b><span>Investigate with purpose</span></div><div class="soft-bar"><div class="glass-sphere sphere-two"></div><span>Follow the evidence.</span></div><p>Validate findings and connect technical weaknesses to business risk.</p></div>
+<div class="principle reveal"><div class="principle-label"><b>03</b><span>Make the next move</span></div><div class="soft-bar"><div class="glass-sphere sphere-three"></div><span>Move with clarity.</span></div><p>Prioritize fixes, document decisions and strengthen your security posture.</p></div>
+</div></section>
+<section class="capabilities-track" id="capabilities"><div class="capabilities stage"><div class="section-top"><span class="eyebrow">EXPLORE THE CAPABILITIES</span><span class="eyebrow">03 / CYRBYTE SECURITY</span></div><h2>Protecting tomorrow,<span class="muted"> today.</span></h2><p class="cap-sub">From an initial assessment to a clearer recovery plan. Explore the scope and deliverables of each service.</p><div class="card-fan" aria-label="Security capabilities">
+<button class="service-card" data-card="0"><div class="card-art art-offensive"><div class="wire-globe"></div><div class="art-cross">+</div></div><span class="card-num">01 / OFFENSIVE</span><b>Offensive<br>Security</b><span class="card-arrow">↗</span></button>
+<button class="service-card" data-card="1"><div class="card-art art-intelligence"><div class="radar"></div><div class="dots"></div></div><span class="card-num">02 / INTELLIGENCE</span><b>Threat<br>Intelligence</b><span class="card-arrow">↗</span></button>
+<button class="service-card active" data-card="2"><div class="card-art art-response"><div class="metal-ring"></div><div class="ring-shadow"></div></div><span class="card-num">03 / RESPONSE</span><b>Incident<br>Response</b><span class="card-arrow">↗</span></button>
+<button class="service-card" data-card="3"><div class="card-art art-cloud"><div class="cloud-stack"><i></i><i></i><i></i><i></i></div></div><span class="card-num">04 / IDENTITY</span><b>Cloud &<br>Identity</b><span class="card-arrow">↗</span></button>
+<button class="service-card" data-card="4"><div class="card-art art-forensics"><div class="fingerprint"></div></div><span class="card-num">05 / FORENSICS</span><b>Digital<br>Forensics</b><span class="card-arrow">↗</span></button>
+</div><div class="card-detail" aria-live="polite"><div><span class="eyebrow" id="detail-tag">IR / DFIR</span><h3 id="detail-title">Incident Response</h3></div><p id="detail-description">Plan containment, preserve evidence, investigate root causes and define a safe recovery path.</p><button class="detail-link" id="detail-open">Explore service ↗</button></div><div class="fan-controls"><button id="previous" aria-label="Previous capability">←</button><span><b id="card-current">03</b> / 05</span><button id="next" aria-label="Next capability">→</button></div></div></section>
+<section class="response section" id="response"><div class="section-top"><span class="eyebrow">FROM UNCERTAINTY TO ACTION</span><span class="eyebrow">04 / RESPONSE</span></div><div class="response-layout"><div><h2 class="reveal">When it matters,<br><span class="muted">make every move count.</span></h2><p class="response-copy reveal">A suspected incident needs a clear sequence. Begin with the facts, preserve what matters and build a considered recovery plan.</p><a class="pill solid" href="mailto:info@cyrbyte.com?subject=Incident%20response%20enquiry"><span class="round">↗</span>Discuss an incident</a></div><div class="steps"><details open><summary><span>01</span>Contain<i>+</i></summary><p>Identify affected systems and limit further access while preserving evidence.</p></details><details><summary><span>02</span>Investigate<i>+</i></summary><p>Reconstruct the timeline, understand the initial access and assess the extent of the event.</p></details><details><summary><span>03</span>Remediate<i>+</i></summary><p>Address the exploited weaknesses and remove persistence using an agreed plan.</p></details><details><summary><span>04</span>Recover<i>+</i></summary><p>Restore carefully, validate the changes and turn lessons into stronger controls.</p></details></div></div></section>
+<section class="contact-track" id="contact"><div class="contact stage"><div class="section-top"><span class="eyebrow">A SAFER NEXT CHAPTER</span><span class="eyebrow">05 / LET'S CONNECT</span></div><div class="marquee-window"><h2 class="contact-marquee"><span class="muted">Cyrbyte Security. Where </span>Human Instinct Meets Digital Defense.</h2></div><div class="contact-body"><p>Start with a conversation.<br>Tell us what you are building, what concerns you,<br>and where you need a clearer view of your security.</p><div class="contact-actions"><button class="pill solid" id="brief-open"><span class="round">↗</span>Start a security brief</button><a class="mail-link" href="mailto:info@cyrbyte.com">info@cyrbyte.com ↗</a><button class="text-link" id="faq-open">Questions & answers ↗</button></div></div><footer><a href="#home" class="footer-logo">Cyrbyte<small>Security</small></a><div><a href="https://cyrbyte.com">Cyrbyte ↗</a><span>© <span id="year">2026</span> Cyrbyte Security</span></div><button class="to-top" aria-label="Back to top">↑</button></footer></div></section>
+</main>
+<div class="film-announcement" role="status" aria-live="polite" id="film-announcement"></div>
+<dialog id="service-dialog" aria-labelledby="modal-title"><button class="dialog-close" aria-label="Close service details">×</button><span class="eyebrow" id="modal-tag"></span><h2 id="modal-title"></h2><p id="modal-copy"></p><div class="service-intro"><span class="eyebrow">WHO IT IS FOR</span><p id="service-audience"></p></div><div class="service-detail-grid"><section><h3>Assessment scope</h3><ul id="service-scope"></ul></section><section><h3>What you receive</h3><ul id="service-deliverables"></ul></section></div><details class="service-inputs"><summary>What helps us get started?</summary><p id="service-inputs"></p></details><span class="eyebrow">ENGAGEMENT NOTES</span><ul id="modal-list"></ul><button class="pill solid" id="service-enquire"><span class="round">↗</span>Discuss this service</button></dialog>
+<dialog id="brief-dialog" aria-labelledby="brief-title"><button class="dialog-close" aria-label="Close security brief">×</button><span class="eyebrow">LET'S UNDERSTAND YOUR NEEDS</span><h2 id="brief-title">Start a conversation.</h2><p>Prepare a brief for info@cyrbyte.com. Review it in your email app before sending.</p><form id="brief-form"><label>Your name<input name="name" autocomplete="name" required maxlength="120"></label><label>Organization (optional)<input name="company" autocomplete="organization" maxlength="160"></label><label>Website or application URL (optional)<input name="website" type="url" placeholder="https://" maxlength="240"></label><label>Work email<input name="email" type="email" autocomplete="email" required maxlength="180"></label><label>Area of interest<select name="service"><option>Offensive Security</option><option>Threat Intelligence</option><option>Incident Response</option><option>Cloud & Identity</option><option>Digital Forensics</option><option>General security enquiry</option></select></label><label>Priority<select name="priority"><option>Planning an assessment</option><option>Active incident or urgent concern</option><option>Exploring options</option></select></label><label>What would you like to discuss?<textarea name="message" rows="4" required maxlength="3000" placeholder="A short overview is enough to begin."></textarea></label><button class="pill solid" type="submit"><span class="round">↗</span>Prepare email</button><p id="brief-status" role="status"></p></form><div id="draft-tools" hidden><textarea id="email-draft" readonly aria-label="Prepared email text" rows="8"></textarea><div class="draft-actions"><a class="pill solid" id="send-email">Open email app ↗</a><button class="pill" id="copy-email">Copy brief</button></div><p>Your brief is ready. It has not been sent.</p></div></dialog>
+<dialog id="process-dialog" aria-labelledby="process-title"><button class="dialog-close" aria-label="Close engagement process">×</button><span class="eyebrow">A CLEAR WAY FORWARD</span><h2 id="process-title">From scope to clarity.</h2><p>Every engagement begins with an agreed objective, authorization and a defined set of systems. Exact work and delivery dates are confirmed after scoping.</p><div class="process-steps"><article><span>01</span><h3>Discover & scope</h3><p>Discuss the business context, assets, concerns and desired outcome. Agree the boundaries, contacts and authorization for the engagement.</p></article><article><span>02</span><h3>Assess & investigate</h3><p>Review the agreed systems and evidence. Validate findings, document limitations and keep the work within the approved scope.</p></article><article><span>03</span><h3>Prioritize & report</h3><p>Receive an explanation of the findings, their practical impact and the actions to prioritize. Reporting depth is agreed during scoping.</p></article><article><span>04</span><h3>Remediate & review</h3><p>Discuss remediation with your team. If included in the engagement, validate fixes and document remaining risks.</p></article></div><button class="pill solid" id="process-enquire"><span class="round">↗</span>Discuss your scope</button></dialog>
+<dialog id="faq-dialog" aria-labelledby="faq-title"><button class="dialog-close" aria-label="Close frequently asked questions">×</button><span class="eyebrow">BEFORE WE BEGIN</span><h2 id="faq-title">Your questions, answered.</h2><div class="faq-list"><details open><summary>Where should I start?</summary><p>Share what you need to protect, the systems involved and your main concern. An initial conversation helps define whether testing, exposure review, cloud assessment or incident investigation is the right next step.</p></details><details><summary>Can you test systems I do not own?</summary><p>Testing requires appropriate authorization from the system owner. Scope and written permission must be agreed before any assessment begins.</p></details><details><summary>What is included in an assessment?</summary><p>The scope can cover applications, APIs, infrastructure, cloud configurations or identity controls. The precise assets, depth, testing windows, reporting and any retest are agreed before the engagement.</p></details><details><summary>How long does an engagement take?</summary><p>Timing depends on asset count, complexity, access and the work required. Share your target date in the brief so scope and timing can be discussed together.</p></details><details><summary>What should I share about a suspected incident?</summary><p>Provide a concise timeline, the affected systems and the symptoms you observed. Use the initial brief to establish contact; evidence transfer and investigation access can then be agreed separately.</p></details><details><summary>Can I request a report for my technical and business teams?</summary><p>Discuss both audiences during scoping. A useful report connects validated technical findings with practical risk, priorities and remediation steps.</p></details><details><summary>Does submitting a brief book a service?</summary><p>The form prepares an email draft for you to review and send. An engagement begins only after scope, authorization, terms and timing are agreed.</p></details></div><button class="pill solid" id="faq-enquire"><span class="round">↗</span>Start a security brief</button></dialog>
+<script src="script.js?v=5"></script><noscript><style>body{overflow:auto}.page{height:auto}.hero-track,.tunnel-track,.capabilities-track,.contact-track{height:auto}.stage{position:relative;height:90svh;min-height:640px}.response{display:block}.cinema-controls,.menu-toggle{display:none}</style></noscript></body></html>
