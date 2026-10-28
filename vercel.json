@@ -5,45 +5,85 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Robots-Tag", "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
       ]
     },
     {
       "source": "/",
       "headers": [
-        { "key": "Link", "value": "<https://security.cyrbyte.com/>; rel=\"canonical\"" }
+        {
+          "key": "Link",
+          "value": "<https://security.cyrbyte.com/>; rel=\"canonical\""
+        }
       ]
     },
     {
       "source": "/services/offensive-security",
       "headers": [
-        { "key": "Link", "value": "<https://security.cyrbyte.com/services/offensive-security>; rel=\"canonical\"" }
+        {
+          "key": "Link",
+          "value": "<https://security.cyrbyte.com/services/offensive-security>; rel=\"canonical\""
+        }
       ]
     },
     {
       "source": "/services/threat-intelligence",
       "headers": [
-        { "key": "Link", "value": "<https://security.cyrbyte.com/services/threat-intelligence>; rel=\"canonical\"" }
+        {
+          "key": "Link",
+          "value": "<https://security.cyrbyte.com/services/threat-intelligence>; rel=\"canonical\""
+        }
       ]
     },
     {
       "source": "/services/incident-response",
       "headers": [
-        { "key": "Link", "value": "<https://security.cyrbyte.com/services/incident-response>; rel=\"canonical\"" }
+        {
+          "key": "Link",
+          "value": "<https://security.cyrbyte.com/services/incident-response>; rel=\"canonical\""
+        }
       ]
     },
     {
       "source": "/services/cloud-identity",
       "headers": [
-        { "key": "Link", "value": "<https://security.cyrbyte.com/services/cloud-identity>; rel=\"canonical\"" }
+        {
+          "key": "Link",
+          "value": "<https://security.cyrbyte.com/services/cloud-identity>; rel=\"canonical\""
+        }
       ]
     },
     {
       "source": "/services/digital-forensics",
       "headers": [
-        { "key": "Link", "value": "<https://security.cyrbyte.com/services/digital-forensics>; rel=\"canonical\"" }
+        {
+          "key": "Link",
+          "value": "<https://security.cyrbyte.com/services/digital-forensics>; rel=\"canonical\""
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "base-uri 'self'; object-src 'none'; frame-ancestors 'self'"
+        }
       ]
     }
   ]
